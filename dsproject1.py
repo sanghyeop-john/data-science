@@ -1,5 +1,5 @@
 # my data science project
-
+"""
 """
 This is another way to leave comments
 Let's learn git commands
@@ -29,6 +29,7 @@ track and stage all files: git add .
 commit with a message: git commit -m "description of commit"
 view the log: git log
 push changes: git push [remotename] [branchname]
+            # git push origin Temp
 """
 
 # create a new file
@@ -55,7 +56,27 @@ git fetch upstream
 git merge upstream/master
 git push origin master
 
+"""
 
+
+# import preprocessing from sklearn
+from sklearn import preprocessing
+
+
+# 파이썬의 import를 활용해 데이터 분석용 패키지인 판다스(Pandas)를 읽어옵니다.
+import pandas as pd
+import preprocessing as
+
+# 판다스의 read_csv를 활용해 train.csv 파일을 읽어옵니다.
+# 읽어온 데이터를 train이라는 이름의 변수에 할당합니다.
+train = pd.read_csv("train.csv")
+
+# train 변수에 할당된 데이터의 행렬 사이즈를 출력합니다.
+# 출력은 (row, column) 으로 표시됩니다.
+print(train.shape)
+
+# head()로 train 데이터의 상위 5개를 띄웁니다.
+train.head()
 
 
 
